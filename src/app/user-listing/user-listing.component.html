@@ -1,0 +1,18 @@
+<div class="row">
+
+  <div class="col s12">
+    <div *ngFor="let user of users" class="col s3 user-listing">
+      <img src="{{ user.pic }}" class="user_pic">
+      <div class="user-listing-basics">
+        <a [routerLink]="['/user', user.id]">{{ user.firstname }} {{ user.lastname }}</a>
+        <br>
+        <span class="user-listing-location">{{ user.city }}, {{ user.state }}</span>
+      </div>
+
+      <div class="user-listing-footer grey lighten-4">
+        <span class="user-listing-footer-summary">{{ user.summary | slice:0:175 }}...</span>
+      </div>
+    </div>
+  </div>
+
+</div>

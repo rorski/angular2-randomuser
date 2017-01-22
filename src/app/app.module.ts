@@ -4,17 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { UserListingComponent } from './user-listing/user-listing.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { FlaskService } from './shared/';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserListingComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [FlaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
