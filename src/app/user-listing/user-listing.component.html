@@ -2,11 +2,11 @@
 
   <div class="col s12">
     <div *ngFor="let user of users" class="col s3 user-listing">
-      <img src="{{ user.pic }}" class="user_pic">
+      <img src="{{ user.pic }}" class="user_pic circle responsive-img">
       <div class="user-listing-basics">
         <a [routerLink]="['/user', user.id]">{{ user.firstname }} {{ user.lastname }}</a>
-        <br>
-        <span class="user-listing-location">{{ user.city }}, {{ user.state }}</span>
+        <p>{{ user.city }}, {{ user.state }}</p>
+        <p>{{ user.email }}</p>
       </div>
 
       <div class="user-listing-footer grey lighten-4">

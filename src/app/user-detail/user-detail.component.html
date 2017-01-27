@@ -1,16 +1,17 @@
 <div *ngIf="user" class="user-detail">
 
-<div class="container">
-  <div class="row">
-    <div class="col s3">
-      <img class="user-pic" alt="{{ user.firstname }} {{ user.lastname }} profile image" src="{{ user.pic }}">
-    </div>
-    <div class="col s9 user-detail-basics">
-      <h4>{{ user.firstname }} {{ user.lastname }}</h4>
-      <p>{{ user.city }}, {{ user.state }}</p>
-      <p>{{ user.summary }}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        <img class="user-pic" alt="{{ user.firstname }} {{ user.lastname }} profile image" src="{{ user.pic }}">
+      </div>
+      <div class="col s9 user-detail-basics">
+        <h4>{{ user.firstname }} {{ user.lastname }}</h4>
+        <p>{{ user.email }}</p>
+        <p>{{ user.city }}, {{ user.state }}</p>
+        <p>{{ user.summary }}</p>
+      </div>
     </div>
   </div>
-</div>
 
 </div>
