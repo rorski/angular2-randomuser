@@ -3,7 +3,8 @@
 }
 
 .user-detail-basics {
-  padding: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #CCC;
 }
 
 .user-pic {

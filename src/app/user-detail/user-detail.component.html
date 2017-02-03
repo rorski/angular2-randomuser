@@ -4,11 +4,14 @@
     <div class="row">
       <div class="col s3">
         <img class="user-pic" alt="{{ user.firstname }} {{ user.lastname }} profile image" src="{{ user.pic }}">
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{ user.city }}, {{ user.state }}</p>
+        <p><i class="fa fa-calendar" aria-hidden="true"></i> {{ user.dob | date }}</p>
+        <p><i class="fa fa-male" aria-hidden="true"></i>{{ user.gender }}</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>{{ user.phone }}</p>
       </div>
       <div class="col s9 user-detail-basics">
         <h4>{{ user.firstname }} {{ user.lastname }}</h4>
         <p>{{ user.email }}</p>
-        <p>{{ user.city }}, {{ user.state }}</p>
         <p>{{ user.summary }}</p>
       </div>
     </div>
