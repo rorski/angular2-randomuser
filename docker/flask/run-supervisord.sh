@@ -3,7 +3,7 @@
 until mysql -h db -u dbuser -pdbpass -e "USE flaskapi"
 do
   echo "MariaDB is unavailable - sleeping"
-  sleep 10
+  sleep 20
 done
 
 # Add accounts and so forth to the DB
