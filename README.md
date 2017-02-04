@@ -17,13 +17,15 @@ The backend API (see the docker subdirectory and the [repository](https://github
 
 ## Installation
 From the top level directory, launch the API backend:
-> cd docker/
-> docker-compose up
-Then, install the front end.
-> cd ..
-> npm install
-> ng serve
-
+```
+cd docker/
+docker-compose up
+```
+Then, install the front end and run the dev server.
+```
+npm install
+ng serve
+```
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
