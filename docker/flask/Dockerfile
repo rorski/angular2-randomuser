@@ -4,7 +4,7 @@ MAINTAINER Rory Mitchell <rory@rorski.com>
 RUN apt-get update 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q python-all python-pip python-dev nginx supervisor uwsgi uwsgi-plugin-python git mariadb-server libmysqlclient-dev vim
 
-RUN git clone https://f023359aa7bc465f30bbe6383af7845760d0922c:x-oauth-basic@github.com/rorski/angular2-randomuser-backend.git /opt/flask
+RUN git clone https://github.com/rorski/angular2-randomuser-backend.git /opt/flask
 RUN pip install --upgrade pip
 RUN pip install -qr /opt/flask/requirements.txt
 
